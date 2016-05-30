@@ -1,0 +1,6 @@
+:host /deep/ section {
+  background: #1e1e1e;
+  color: #fafafa; }
+
+:host /deep/ textarea {
+  font-size: 34px; }

@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row">
+        <scriptpad-menu class="col-xs-12 no-pad" 
+        (command)="runcommand($event)">
+        </scriptpad-menu>
+    </div>
+    <div class="row middle">
+        <scriptpad-layers class="col-xs-1 no-pad"></scriptpad-layers>
+        <scriptpad-input class="col-xs-11 no-pad"></scriptpad-input>
+    </div>
+    <div class="row">
+        <scriptpad-output [update]="lastUpdate" class="col-xs-12 no-pad"></scriptpad-output>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+.stringType {
+  color: red; }
+
+.numberType {
+  color: blue; }
+
+html, body {
+  background: #fafafa;
+  color: #1e1e1e; }

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: SourceCodePro;
+  src: url("fonts/SourceCodePro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: SourceCodeProBold;
+  src: url("fonts/SourceCodePro-Bold.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: SourceCodeProLight;
+  src: url("fonts/SourceCodePro-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }

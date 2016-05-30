@@ -1,0 +1,12 @@
+<div [ngSwitch]="type">
+      <span *ngSwitchWhen="'object'">An Object</span>
+      <span *ngSwitchWhen="'function'">A function</span>
+      <span *ngSwitchWhen="'array'">An Array</span>
+      <span *ngSwitchWhen="'number'">
+          <number-type [value]="objval"></number-type>
+      </span>
+      <span *ngSwitchWhen="'string'">
+          <string-type [value]="objval"></string-type>
+      </span>
+      <span *ngSwitchDefault>An unknown type</span>
+</div>
