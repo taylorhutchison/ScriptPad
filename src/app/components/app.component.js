@@ -15,6 +15,7 @@ const input_component_1 = require('./input.component');
 const output_component_1 = require('./output.component');
 const Rxjs_1 = require('Rxjs');
 const typedetection_service_1 = require('../services/typedetection.service');
+const grabbar_component_1 = require("./grabbar.component");
 let AppComponent = class AppComponent {
     runcommand(event) {
         var self = this;
@@ -48,7 +49,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'scriptpad',
         templateUrl: 'app/templates/app.html',
-        directives: [menu_component_1.MenuComponent, layers_component_1.LayersComponent, input_component_1.InputComponent, output_component_1.OutputComponent],
+        directives: [grabbar_component_1.GrabBarComponent, menu_component_1.MenuComponent, layers_component_1.LayersComponent, input_component_1.InputComponent, output_component_1.OutputComponent],
         providers: [typedetection_service_1.TypeDetection]
     }), 
     __metadata('design:paramtypes', [])

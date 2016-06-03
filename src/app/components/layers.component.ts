@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 
 @Component({
     selector: 'scriptpad-layers',
-    templateUrl: 'app/templates/layers.html'
+    templateUrl: 'app/templates/layers.html',
 })
 export class LayersComponent {
     mode:string = "Expand";

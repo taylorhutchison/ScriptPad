@@ -29,7 +29,7 @@ let LayersComponent = class LayersComponent {
 LayersComponent = __decorate([
     core_1.Component({
         selector: 'scriptpad-layers',
-        templateUrl: 'app/templates/layers.html'
+        templateUrl: 'app/templates/layers.html',
     }), 
     __metadata('design:paramtypes', [])
 ], LayersComponent);

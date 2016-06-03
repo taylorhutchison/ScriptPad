@@ -1,0 +1,44 @@
+.fullscreen {
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+}
+
+.row {
+    display: flex;
+    flex-direction:row;
+    align-items:stretch;
+}
+
+.full-width {
+    width:100%;
+}
+
+.top {
+    flex-grow:1;
+}
+
+.middle {
+    flex-grow:12;
+}
+
+.bottom {
+    flex-grow:6;
+}
+
+.layers {
+    flex-grow:1;
+}
+.input {
+    flex-grow: 10;
+}

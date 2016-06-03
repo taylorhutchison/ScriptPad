@@ -1,4 +1,4 @@
-<section (mouseover)="expandToggle()" (mouseout)="expandToggle()" role="layers" [class]="getClass()">
+<section role="layers" [class]="getClass()">
 <button (click)="addLayer()">Add</button>
 <ul>
     <li *ngFor="let layer of layers">{{layer}}</li>

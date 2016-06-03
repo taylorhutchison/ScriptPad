@@ -5,11 +5,12 @@ import {InputComponent} from './input.component';
 import {OutputComponent} from './output.component';
 import {Observable} from 'Rxjs';
 import {TypeDetection} from '../services/typedetection.service';
+import {GrabBarComponent} from "./grabbar.component";
 
 @Component({
   selector: 'scriptpad',
   templateUrl:'app/templates/app.html',
-  directives: [MenuComponent, LayersComponent, InputComponent, OutputComponent],
+  directives: [GrabBarComponent, MenuComponent, LayersComponent, InputComponent, OutputComponent],
   providers: [TypeDetection]
 })
 export class AppComponent { 
