@@ -4,10 +4,10 @@
     </div>
     <div class="row middle">
         <scriptpad-layers class="layers"></scriptpad-layers>
-        <grab-bar orientation="vertical"></grab-bar>
+            <grab-bar *ngIf="settings.resizablePanes" orientation="vertical"></grab-bar>
         <scriptpad-input class="input"></scriptpad-input>
     </div>
-    <grab-bar orientation="horizontal"></grab-bar>
+        <grab-bar *ngIf="settings.resizablePanes" orientation="horizontal"></grab-bar>
     <div class="row bottom">
         <scriptpad-output class="component full-width" [update]="lastUpdate"></scriptpad-output>
     </div>

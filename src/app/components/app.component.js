@@ -16,7 +16,12 @@ const output_component_1 = require('./output.component');
 const Rxjs_1 = require('Rxjs');
 const typedetection_service_1 = require('../services/typedetection.service');
 const grabbar_component_1 = require("./grabbar.component");
+const settings_service_1 = require("../services/settings.service");
 let AppComponent = class AppComponent {
+    constructor(_settings) {
+        this._settings = _settings;
+        this.settings = _settings.getSettings();
+    }
     runcommand(event) {
         var self = this;
         switch (event.name) {
@@ -50,9 +55,9 @@ AppComponent = __decorate([
         selector: 'scriptpad',
         templateUrl: 'app/templates/app.html',
         directives: [grabbar_component_1.GrabBarComponent, menu_component_1.MenuComponent, layers_component_1.LayersComponent, input_component_1.InputComponent, output_component_1.OutputComponent],
-        providers: [typedetection_service_1.TypeDetection]
+        providers: [typedetection_service_1.TypeDetection, settings_service_1.SettingsService]
     }), 
-    __metadata('design:paramtypes', [])
+    __metadata('design:paramtypes', [settings_service_1.SettingsService])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
